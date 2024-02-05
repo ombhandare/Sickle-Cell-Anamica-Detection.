@@ -28,7 +28,6 @@ value = random.randint(1, 1000)
 print(value)
 
 # database code
-
 db = sqlite3.connect('resistration.db')
 cursor = db.cursor()
 cursor.execute("CREATE TABLE IF NOT EXISTS registration"
@@ -47,7 +46,7 @@ def password_check(passwd):
 		val = False
 		
 	if len(passwd) > 20: 
-		print('length should be not be greater than 20') 
+		print('length should be not be greater than 8') 
 		val = False
 		
 	if not any(char.isdigit() for char in passwd): 

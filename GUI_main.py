@@ -81,10 +81,8 @@ def window():
 
 #++++++++++++++++++++++++++++++++++++++++++++
 #####For background Image
-image2 =Image.open('s11.jpg')
-image2 =image2.resize((1500,800), Image.ANTIALIAS)
-
-#image2.place(x=100, y = 200)
+image2 =Image.open('b9.jpg')
+image2 =image2.resize((1400,700), Image.ANTIALIAS)
 
 background_image=ImageTk.PhotoImage(image2)
 
@@ -95,7 +93,7 @@ background_label.image = background_image
 background_label.place(x=100, y=100) #, relwidth=1, relheight=1)
 
 
-lbl = tk.Label(root, text="Sickle Cell Anemia Detection", font=('times', 40,' bold '), height=1, width=50,bg="BLACK",fg="white")
+lbl = tk.Label(root, text="Sickel Cell Detection", font=('times', 40,' bold '), height=1, width=50,bg="BLACK",fg="white")
 lbl.place(x=0, y=0)
 
 framed = tk.LabelFrame(root, text=" --WELCOME-- ", width=400, height=300, bd=5, font=('times', 14, ' bold '),bg="seashell2")

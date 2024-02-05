@@ -23,7 +23,7 @@ root.title("MAIN PAGE")
 #430
 #++++++++++++++++++++++++++++++++++++++++++++
 #####For background Image
-image2 =Image.open('s3.jpg')
+image2 =Image.open('s1.jpg')
 image2 =image2.resize((750,890), Image.ANTIALIAS)
 
 background_image=ImageTk.PhotoImage(image2)
@@ -31,7 +31,7 @@ background_label = tk.Label(root, image=background_image)
 
 background_label.image = background_image
 
-background_label.place(x=850, y=0) #, relwidth=1, relheight=1)
+background_label.place(x=800, y=0) #, relwidth=1, relheight=1)
 #
 
 
@@ -51,7 +51,7 @@ frame_alpr = tk.LabelFrame(root,width=850, height=1850, bd=5, font=('times', 14,
 frame_alpr.grid(row=0, column=0)
 frame_alpr.place(x=0, y=0)
 
-image2 =Image.open('logo2.png')
+image2 =Image.open('log9.jpg')
 image2 =image2.resize((140,120), Image.ANTIALIAS)
 
 background_image=ImageTk.PhotoImage(image2)
@@ -64,14 +64,14 @@ background_label.place(x=350, y=25)
 lbl = tk.Label(frame_alpr, text="Deep Learning Approaches On", font=('Times New Roman', 30,' bold '),bg="white",fg="black")
 lbl.place(x=150, y=180)
 
-lbl = tk.Label(frame_alpr, text="Sickle Cell Anemia Detection", font=('Times New Roman', 30,' bold '),bg="white",fg="black")
+lbl = tk.Label(frame_alpr, text="Sickel Cell Detection", font=('Times New Roman', 30,' bold '),bg="white",fg="black")
 lbl.place(x=170, y=280)
 
 logo_label=tk.Label()
 logo_label.place(x=90,y=55)
 
 
-logo_label1=tk.Label(text='To develop a system that capable \n Identify the type of Sickle Cell...',compound='bottom',font=("Times New Roman", 20, 'bold', 'italic'),width=35, bg="white", fg="black")
+logo_label1=tk.Label(text='To develop a system that capable \n Identify the type of Sickel Cell...',compound='bottom',font=("Times New Roman", 20, 'bold', 'italic'),width=35, bg="white", fg="black")
 #logo_label=tk.Label(height=500, width=400)
 logo_label1.place(x=130,y=590)
 

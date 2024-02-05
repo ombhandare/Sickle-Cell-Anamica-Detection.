@@ -72,11 +72,11 @@ def login():
             root.destroy()
 
             from subprocess import call
-            call(['python','GUI_MASTER.py'])
+            call(['python','GUI_Master_old.py'])
 
             # ================================================
          else:
-           ms.showerror('Oops!', 'Login Credentials are not available in Database.')
+           ms.showerror('Oops!', 'Username Or Password Did Not Found/Match.')
 
 
 # frame_alpr = tk.LabelFrame(root, text=" --About us-- ", width=550, height=500, bd=5, font=('times', 14, ' bold '),bg="#7CCD7C")
@@ -90,9 +90,9 @@ def login():
 
 #bg1_icon=ImageTk.PhotoImage(file="E:\30%-face-mask\\b.jpg")
 
-bg_icon=ImageTk.PhotoImage(file="C:/Users/bhand/OneDrive/Desktop/Code/L.jpg")
-user_icon=ImageTk.PhotoImage(file="C:/Users/bhand/OneDrive/Desktop/Code/l1.png")
-pass_icon=ImageTk.PhotoImage(file="C:/Users/bhand/OneDrive/Desktop/Code/p1.jpg")
+bg_icon=ImageTk.PhotoImage(file="L.jpg")
+user_icon=ImageTk.PhotoImage(file="l1.png")
+pass_icon=ImageTk.PhotoImage(file="p1.jpg")
         
 # bg_lbl=tk.Label(root,image=bg1_icon, width=600,height=550)
 # bg_lbl.place(x=50,y=40)
